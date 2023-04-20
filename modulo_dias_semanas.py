@@ -1,1 +1,1 @@
-DIAS =("luns", "martes" , "mercores", "xoves" ,"venres")# en mayuscula por convencion, no existe constante en Python
+DIAS =("luns", "martes" , "mercores", "xoves" ,"venres")# en mayuscula por convencion, no existe constante en Python)
