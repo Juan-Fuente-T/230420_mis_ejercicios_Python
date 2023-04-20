@@ -1,0 +1,11 @@
+print ("Hola, me gusta python")
+print ("Hola", "me gusta Python", 2023,sep="***")
+print ("Ana Mria", end="")
+print (".",end="")
+print ("Josefa",end="")
+print (".",end="")
+print ("Fernanda")
+nombre = input("introduce tu nombre:")
+edad=input("introduce tu edad:")
+print ("te llamas", nombre, "y tienes", edad, "años")
+print(f"Te llamas {nombre} y tienes {edad}años") #formato f-string

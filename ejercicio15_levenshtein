@@ -1,0 +1,33 @@
+import Levenshtein
+"""import modulo_dias_semanas
+print (modulo_dias_semanas.dias)"""
+
+from modulo_dias_semanas import DIAS
+#print (DIAS)
+dia = input ("Introduce un dia de la semana:")
+dia = dia.capitalize() 
+if dia in DIAS:
+    print ("OK", dia)
+else:
+    
+    #version for
+    # #for d in dias:distancia = Levenshtein.distance(dia, d)
+    """distancias = []
+    for d in DIAS:
+        distancia = Levenshtein.distance(dia, d)
+        distancias.append( (distancia,d) )
+    print ("A lo mejor querías decir", min(distancias)[1])"""
+    distancias =[(Levenshtein.distance(dia, d), d) for d in DIAS]
+    print ("A lo mejor querías decir", min(distancias)[1])
+"""palabra1 = "gato"
+palabra2 = "gata"
+palabra3 = "ratón"""
+#si el dia introducido es correcto -->Ok
+#si no es correcto mostrar el que mas se parezca
+
+    
+
+
+
+"""print (Levenshtein.distance(palabra1,palabra2))
+print (Levenshtein.distance(palabra1,palabra3))"""
