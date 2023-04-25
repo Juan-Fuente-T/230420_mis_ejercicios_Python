@@ -1,0 +1,15 @@
+import levensshtein
+dias =["luns", "martes" , "mercores", "xoves" ,"venres"]
+palabra1 = "gato"
+palabra2 = "gata"
+palabra3 = "ratón"
+#si el dia introducido es correcto -->Ok
+#si no es correcto mostrar el que mas se parezca
+dia_introducido=input("Introduce un día de la semana: ")
+    if 
+def (dia_introducido):
+
+
+
+print (Levenshtein.distance(palabra1,palabra2))
+print (Levenshtein.distance(palabra1,palabra3))

@@ -1,0 +1,47 @@
+fichero = open("Quijote.txt", mode="r", encoding="utf-8")
+contenido = fichero.read()
+contenido_upper = contenido.upper()
+fichero.close()
+
+palabra = input ("Dime una palabra: ")
+palabra_upper = palabra.upper()
+
+if len(palabra)<=2:
+    print("La palabra es demasiado corta")
+else:
+    print(f"Se ha encontrado la palabra {palabra} {contenido_upper.count(palabra)} veces")
+    #MAL, no funciona???
+
+#opcion 1 con with y autocierre
+"""
+with open("Quijote.txt", mode="r", encoding="utf-8")
+    contenido = fichero.read()"""
+   
+
+"""
+fichero = open("Quijote.txt", mode="r", encoding="utf-8")
+contenido = fichero.read()
+fichero.close()"""
+#cadena.count(subcadena) --> Devuelve el número de veces que aparece una cadena dentro de otra
+
+#Solicitar al usuario una palabra y mostrar cuantas veces aparece en El Quijote.
+#No debe importar que sean mayúsculas o minúsculas.
+#Si la palabra a buscar tiene menos de 2 caracters se muestra un error.
+
+#Opción 1, con with y autocierre
+with open("elquijote.txt",mode="r",encoding="utf-8") as fichero:
+    contenido = fichero.read()#Lee todo el contenido del fichero y lo almacena en contenido
+contenido_upper = contenido.upper()#Pasamos el contenido a mayúsculas
+palabra_buscada = (input("Introduce la palabra a buscar:")).upper()
+if (len(palabra_buscada)<2):
+    print("La palabra de búsqueda es demasiado corta")
+else:
+    print(f"Se ha encontrado la palabra {palabra_buscada} {contenido_upper.count(palabra_buscada)} veces")
+
+
+'''
+#Opción 2, al estilo 'tradicional'
+fichero = open("elquijote.txt",mode="r",encoding="utf-8")
+contenido = fichero.read()
+fichero.close()
+'''

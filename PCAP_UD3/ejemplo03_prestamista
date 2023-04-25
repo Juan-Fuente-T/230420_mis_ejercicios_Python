@@ -1,0 +1,25 @@
+class Prestamista:
+    def __init__(self, _fondos) -> None: 
+        self.__fondos = _fondos
+        
+    def pedir_prestamo(self,cantidad):
+        if cantidad>self.__fondos:
+            raise Exception("No hay fondos")
+        self.__fondos-=cantidad
+        return cantidad
+    def get_fondos (self):
+        return self.__fondos
+
+
+
+oscar = Prestamista(10000)#instanciar
+try:
+    midinero = oscar.pedir_prestamo(3000)
+    midinero = oscar.pedir_prestamo(3000)
+    midinero = oscar.pedir_prestamo(3000)
+    midinero = oscar.pedir_prestamo(3000)
+except Exception as e:
+     print(e)
+print(oscar.get_fondos())
+
+
