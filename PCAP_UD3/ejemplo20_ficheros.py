@@ -1,0 +1,1 @@
+fichero =open("Fichero.txt",mode="w", encoding="utf-8")
