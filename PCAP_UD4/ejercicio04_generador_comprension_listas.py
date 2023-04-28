@@ -6,3 +6,5 @@ generador_triples = [numero * 3 for numero in lista ]
 print(type(generador_triples))
 for triple in generador_triples:
     print(triple, end="-")
+
+    #No va, ver profe
